@@ -1,0 +1,44 @@
+.dropdown{
+    position: absolute;
+    top: calc(90vh - 35em + 2vh);
+    transform: translateX(-15.5vw);
+    width: 7em;
+    height: 35em;
+    background-color: #06a997;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    transition: all 400ms ease-in-out;
+    z-index: 1000;
+    margin: 10px;
+    overflow-x: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.genreText{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    transition: all 300ms ease-in-out;
+}
+
+.genreText:hover{
+    text-decoration: underline;
+    font-size: 1.1em;
+}
+
+.dropdown:hover ~ .utility{
+    height: 5vh;
+    width: 50vw;
+    top: 92vh;
+}
+
+.dropdown:hover ~ .utility .textarea{
+    width: 90%;
+    height: 3.5vh;
+    transition: all 500ms ease-in-out;
+}

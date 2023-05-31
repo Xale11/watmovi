@@ -1,0 +1,154 @@
+.utility{
+    position: absolute;
+    top: 96vh;
+    width: 35vw;
+    height: 1.7vh;
+    background-color: #06a997;
+    border-radius: 2em;
+    transition: all 400ms ease-in-out;
+    z-index: 1000;
+    margin: 10px;
+    overflow-x: hidden;
+    cursor: pointer;
+    overflow-y: hidden;
+}
+
+.utility:hover{
+    height: 5vh;
+    width: 50vw;
+    top: 92vh;
+}
+
+
+.taskbar{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr 1fr 1fr;
+    grid-template-rows: 100%;
+    align-items: center;
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+}
+
+.searchbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a3337;
+    width: 10%;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+    color: #204d50;
+    font-size: 1.5em;
+}
+
+.searchbtn:hover{
+    font-size: 1.8em;
+    color: #ac6a4f;
+}
+
+.textarea{
+    width: 10%;
+    height: 0.5vh;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    outline: none;
+    border: none;
+    background-color: #0a3337;
+    color: #be8155;
+    transition-delay: 300ms;
+    
+}
+
+.utility:hover .textarea{
+    width: 90%;
+    height: 3.5vh;
+    transition: all 500ms ease-in-out;
+}
+
+.genre{
+    height: 5vh;
+    color: #204d50;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease-in-out;
+}
+
+.genre:hover{
+    font-size: 1.8em;
+    color: #094040;
+}
+
+.home{
+    color: #204d50;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 100ms ease-in-out;
+}
+
+.home:hover{
+    font-size: 1.8em;
+    color: #094040;
+}
+
+.theme{
+    color: #204d50;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease-in-out;
+}
+
+.theme:hover{
+    font-size: 1.8em;
+    color: #094040;
+}
+
+.random{
+    color: #204d50;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease-in-out;
+}
+
+.random:hover{
+    font-size: 1.8em;
+    color: #094040;
+}
+
+
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.green{
+    background-color: green;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.pink{
+    background-color: pink;
+}

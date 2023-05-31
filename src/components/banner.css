@@ -1,0 +1,135 @@
+.banner{
+    margin-top: 0.5em;
+    /*background-color: #204d50;*/
+    width: 96%;
+    min-height: 35%;
+    min-width: 10em;
+    border-radius: 1em;
+    display: grid;
+    grid-template-rows: 5fr;
+    margin-bottom: calc(var(--height) / 60 * 2px);
+    user-select: none;
+    -webkit-user-select: none; /*Safari*/
+    -moz-user-select: none; /*Firefox*/
+}
+
+.top10{
+    
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    width: 100vw;
+}
+
+.slideshow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    animation: slideshow 40s infinite linear;
+}
+
+.slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.slideshow:hover{
+    animation-play-state: paused;
+}
+
+.slide img{
+    width: 22em;
+    border-radius: 1.5em;
+    margin-bottom: 0.2em;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.slide img:hover{
+    width: 28em;
+    border-radius: 1.5em;
+    margin-bottom: 0.2em;
+}
+
+.top10btn{
+    background-color: #06a997;
+    height: 1.5em;
+    width: 6em;
+    text-align: center;
+    border-radius: 0.2em;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.rank{
+    background-color: #06a997;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    text-align: center;
+    
+}
+
+.movieTitle{
+    background-color: #06a997;
+    padding: 0.1em;
+    margin-bottom: 0.2em;
+    border-radius: 0.5em;
+}
+
+
+@keyframes slideshow {
+    0%{
+        transform: translateX(-2em);
+    }
+    
+    100%{
+        transform: translateX(calc((23.5em * -10) - 2em));
+    }
+    
+}
+
+@media (max-height: 915px) {
+    .banner{
+        margin-bottom: calc(var(--height) / 22 * 2px);
+    }
+
+    .slide img:hover{
+        width: 26em;
+    }
+}
+
+@media (max-height: 760px) {
+    .slide img{
+        width: 21em;
+    }
+
+    .slide img:hover{
+        width: 23.5em;
+    }
+}
+
+@media (max-height: 670px) {
+    .banner{
+        margin-bottom: calc(var(--height) / 15 * 3px);
+    }
+
+    .slide img{
+        width: 21em;
+    }
+
+    .slide img:hover{
+        width: 21em;
+    }
+}
