@@ -5,6 +5,7 @@ import Context from './context/context';
 import Genre from './components/genre';
 import Moviepage from './components/moviepage';
 import Query from './components/query';
+/*update */
 
 function App() {
   return (
