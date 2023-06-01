@@ -36,6 +36,7 @@ const Background = () => {
 
   return (
     <div className='background' style={theme == 1 ? {"--theme1": "#04080e", "--theme2": "#464b47"} : {"--theme1": "#b1d3e6", "--theme2": "#a2d9f8"}}>
+      <Utility></Utility>
       <Link to="/" className="appTitle">
         watMovie
       </Link>
@@ -44,7 +45,6 @@ const Background = () => {
             return <Movies genre={genre}></Movies>
         })}
         {show && <Dropdown></Dropdown>}
-        <Utility></Utility>
         <div className="credit">
           Made by Alex Diyan
         </div>

@@ -1,5 +1,5 @@
 .utility{
-    position: fixed;
+    position: absolute;
     top: 96vh;
     width: 35vw;
     height: 1.7vh;
@@ -151,4 +151,15 @@
 
 .pink{
     background-color: pink;
+}
+
+@media (max-width: 1280px){
+    .utility{
+        height: 2.5vh;
+        top: 94vh;
+    }
+
+    .utility:hover{
+        top: 90vh;
+    }
 }

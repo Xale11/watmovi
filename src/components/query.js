@@ -25,6 +25,7 @@ const Query = () => {
 
   return (
     <div className='querypage' style={theme == 1 ? {"--theme1": "#04080e", "--theme2": "#464b47"} : {"--theme1": "#b1d3e6", "--theme2": "#a2d9f8"}}>
+      <Utility></Utility>
       <Link to="/" className="appTitle">
         watMovie
       </Link>
@@ -39,7 +40,6 @@ const Query = () => {
         }) : <p className='errorSearch'>No movies found for: {movieId}</p>}        
       </div>
       {show && <Dropdown></Dropdown>}
-      <Utility></Utility>
     </div>
   )
 }

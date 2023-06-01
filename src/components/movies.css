@@ -18,7 +18,7 @@
     writing-mode:vertical-rl;
     text-orientation: mixed;
     transform: rotate(-180deg);
-    margin-left: 0.5em;
+    margin-left: 0.2vw;
     color: #06a997;
     font-size: 1.5em;
     transition: all 500ms linear;

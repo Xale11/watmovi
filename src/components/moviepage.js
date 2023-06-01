@@ -13,12 +13,12 @@ const Moviepage = () => {
 
   return (
     <div className='moviepage' style={theme == 1 ? {"--theme1": "#04080e", "--theme2": "#464b47"} : {"--theme1": "#b1d3e6", "--theme2": "#a2d9f8"}}>
+      <Utility></Utility>
       <Link to="/" className="appTitle">
         watMovie
       </Link>
       <Showcase></Showcase>
       {show && <Dropdown></Dropdown>}
-      <Utility></Utility>
     </div>
   )
 }
