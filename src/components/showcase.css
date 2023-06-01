@@ -29,7 +29,7 @@
 }
 
 .movieImgTitle{
-
+    text-align: center;
 }
 
 .movieImg img{
@@ -112,6 +112,7 @@
     display: flex;
     flex-direction: row;
     gap: 0.4em;
+    flex-wrap: wrap;
 }
 
 .providerLogos img{
@@ -125,7 +126,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25em;
+    width: auto;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     height: 2em;
     text-align: center;
     border-radius: 2em;
@@ -164,4 +167,51 @@
     .movieDescText{
         font-size: 0.9em;
     }
+}
+
+@media (max-width: 1024px){
+    .showcase{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .movieImg img{
+        width: 90vw;
+    }
+    .movieDescText{
+        height: auto;
+        padding: 0.5em;
+        overflow: hidden;
+    }
+    .movieDesc{
+        margin-top: 0.5em;
+    }
+    .movieRating div{
+        font-size: 5vw;
+    }
+    
+    .movieInfoContainer{
+        height: auto;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .providerLogos{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .providerLogos img{
+        border-radius: 1em;
+        width: 10vw;
+        cursor: pointer;
+        padding-bottom: 0.25em;
+    }
+    .recommendedMovies{
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 768px){
+
 }

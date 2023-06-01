@@ -76,7 +76,7 @@ const Showcase = () => {
             </div>
           </div>
           <div className="movieProvider">
-            <div>Watch Now On:</div>
+            <div className>Watch Now On:</div>
             <div className="providerLogos">
               {provider ? logo.map((item) => {
                 let img = `https://image.tmdb.org/t/p/w300${item}`

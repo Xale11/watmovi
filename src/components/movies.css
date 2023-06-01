@@ -1,6 +1,6 @@
 .movies{
     width: 100vw;
-    min-height: 24em;
+    height: 24em;
     display: grid;
     grid-template-columns: 0.2fr 9.8fr;
     user-select: none;
@@ -96,4 +96,18 @@
     min-width: 2em;
     border-top-left-radius: 1em;
     border-bottom-left-radius: 1em;
+}
+
+@media (max-width:480px){
+    .card{
+        height: 12em;
+        width: 8em;
+        transform: translateX(calc(8.3em * var(--shift)));
+    }
+    .chevron{
+        height: 12em;
+    }
+    .movies{
+        height: 12em;
+    }
 }

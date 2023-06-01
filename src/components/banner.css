@@ -133,3 +133,16 @@
         width: 21em;
     }
 }
+
+@media (max-width:480px){
+    .slide img {
+        width: 15em;
+    }
+    .movieTitle{
+        text-align: center;
+    }
+    .banner{
+        margin-bottom: 1.5em;
+    }
+    
+}
